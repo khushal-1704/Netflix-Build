@@ -11,6 +11,37 @@
   transition: all 0.5s;
 }
 
+.moreOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option__logo {
+  color: #e50914;
+  transition: all 0.5s;
+}
+
+.options {
+  display: flex;
+  list-style: none;
+}
+
+.options li {
+  margin-left: 40px;
+  position: relative;
+  color: #fff;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  /* transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s; */
+}
+
+.options li:hover {
+  transform: translateY(-2.1px);
+  color: #e50914;
+  font-weight: bold;
+}
+
 .nav__black {
   background-color: #111;
 }

@@ -9,32 +9,33 @@ import Row from '../Row'
 function HomeScreen() {
     const [show, handleShow] = useState(true);
 
-    const transitionNavBar = () => {
-        if (window.scrollY > 300) {
-            handleShow(false)
-        } else {
-            handleShow(true)
-        }
-    }
+    // const transitionNavBar = () => {
+    //     if (window.scrollY > 300) {
+    //         handleShow(false)
+    //     } else {
+    //         handleShow(true)
+    //     }
+    // }
 
-    useEffect(() => {
-        window.addEventListener('scroll', transitionNavBar)
-        return () => window.removeEventListener('scroll',
-            transitionNavBar)
-    }, [])
+    // useEffect(() => {
+    //     window.addEventListener('scroll', transitionNavBar)
+    //     return () => window.removeEventListener('scroll',
+    //         transitionNavBar)
+    // }, [])
 
     return (
         <div className='homeScreen'>
             {show && <Nav />}
             <Banner />
             <Row
-                title='NETFLIX ORIGINALS'
-                fetchUrl={requests.fetchNetflixOriginals}
+                title='Trending Now'
+                fetchUrl={requests.fetchTrending}
                 isLargeRow
             />
             <Row
-                title='Trending Now'
-                fetchUrl={requests.fetchTrending}
+                title='NETFLIX ORIGINALS'
+                fetchUrl={requests.fetchNetflixOriginals}
+                isLargeRow
             />
             <Row
                 title='Top Rated'

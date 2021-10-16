@@ -1,24 +1,30 @@
 .loginScreen {
   position: relative;
   height: 100%;
-  background: url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg")
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/d9cb1eea-62ee-4ec1-9b90-8d98874b8867/c1a78ec0-a2a8-43ff-8118-d11f0da72d69/IN-en-20210817-popsignuptwoweeks-perspective_alpha_website_large.jpg")
     center no-repeat;
 }
 
 .loginScreen__body > h1 {
   font-size: 3.125rem;
   margin-bottom: 20px;
+  animation-name: moveInLeftHeader;
+  animation-duration: 3s;
 }
 
 .loginScreen__body > h2 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
+  animation-name: moveInLeftHeader;
+  animation-duration: 3s;
 }
 
 .loginScreen__body > h3 {
   font-size: 1.3rem;
   font-weight: 400;
+  animation-name: moveInLeftHeader;
+  animation-duration: 3s;
 }
 
 .loginScreen__body {
@@ -55,6 +61,7 @@
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;
+  border-radius: 5px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -80,7 +87,7 @@
 }
 
 .loginScreen__input > form > input {
-  padding: 10px;
+  padding: 26px;
   outline-width: 0;
   height: 25px;
   width: 30%;
@@ -90,14 +97,83 @@
 
 .loginScreen__input {
   margin: 20px;
+  animation-name: moveOnTop;
+  animation-duration: 3s;
 }
 
 .loginScreen__getStarted {
-  padding: 16px 20px;
+  padding: 31px 37px;
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;
   border: none;
   font-weight: 600;
   cursor: pointer;
+}
+
+@keyframes moveInLeftHeader {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveOnTop {
+  0% {
+    opacity: 0;
+    transform: translateY(130px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .loginScreen__body h1 {
+    font-size: 2rem;
+  }
+  .loginScreen__body h2 {
+    font-size: 1.2rem;
+  }
+  .loginScreen__body h3 {
+    font-size: 1rem;
+  }
+  .loginScreen__input > form > input {
+    padding: 15px;
+  }
+  .loginScreen__getStarted {
+    padding: 21px 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .loginScreen__input > form > input {
+    padding: 9px;
+  }
+  .loginScreen__getStarted {
+    padding: 13px 18px;
+  }
+}
+
+@media screen and (maa-width: 600px) {
+  .loginScreen__body h1 {
+    font-size: 30px;
+  }
+  .loginScreen__body h2 {
+    font-size: 1.2rem;
+  }
+  .loginScreen__body h3 {
+    font-size: 1rem;
+  }
+  .loginScreen__input > form > input {
+    padding: 10px;
+  }
+  .loginScreen__getStarted {
+    padding: 14px 13px;
+  }
 }

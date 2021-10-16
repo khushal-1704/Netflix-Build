@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 448px;
+  height: 730px;
   color: white;
   object-fit: contain;
 }
@@ -12,6 +12,7 @@
 }
 
 .banner__title {
+  width: 52%;
   text-shadow: -4px 2px 2px black;
   font-size: 3rem;
   font-weight: 800;
@@ -22,13 +23,14 @@
   width: 45rem;
   line-height: 1.3;
   padding-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   max-width: 360px;
   height: 80px;
 }
 
 .banner--fadeBottom {
-  height: 7.4rem;
+  margin-top: 257px;
+  height: 9rem;
   background-image: linear-gradient(
     180deg,
     transparent,

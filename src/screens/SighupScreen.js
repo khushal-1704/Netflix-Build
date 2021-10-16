@@ -42,7 +42,6 @@ function SighupScreen() {
                 <button type='submit' onClick={signIn}>Sign In</button>
                 <h4><span className='signupScreen__gray'>New to Netflix?</span> <span className='signupScreen__link' onClick={register}>Sign Up now.</span></h4>
             </form>
-
         </div>
     )
 }

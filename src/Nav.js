@@ -23,11 +23,11 @@ function Nav() {
             <div className="nav__contents">
                 <img
                     onClick={() => history.push("/")}
-                    className='nav__logo' src=" https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" />
+                    className='nav__logo' src="/images/netflix-logo-0.png" alt="" />
 
                 <img
                     onClick={() => history.push("/profile")}
-                    className='nav__avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png " alt="net-ava" />
+                    className='nav__avatar' src="/images/avatar.png " alt="net-ava" />
             </div>
         </div>
 
